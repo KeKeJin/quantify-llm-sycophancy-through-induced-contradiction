@@ -17,9 +17,9 @@
   3. You may want to create a new `client` for the target LLM using API key.
   4. Run the cells; results append to `data.db` by default.
 
-## Database: data.db
+## Release
 
-Schema (SQLite):
+data.db Schema (SQLite):
 - `prompts(prompt_id INTEGER PK, prompt TEXT NOT NULL, topic TEXT, type TEXT)`
   - non-debatable and debatable prompts generated with GPT-5 across 12 different domains.
 - `experiments_log(experiment_id INTEGER PK, prompt_id INTEGER NOT NULL, model TEXT, initial_response TEXT, counter_example TEXT, second_response TEXT, counter_prompting TEXT, FOREIGN KEY(prompt_id) REFERENCES prompts(prompt_id) ON DELETE CASCADE)`
