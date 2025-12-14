@@ -14,7 +14,8 @@
 - How to run:
   1. Export your key: `export OPENAI_API_KEY=...`
   2. Open `run_experiment.ipynb` in Jupyter/Lab, adjust `counter_prompting` list or target model (e.g., `kimi-k2-0905-preview`, `gpt-5`, `gpt-4o`).
-  3. Run the cells; results append to `data.db` by default.
+  3. You may want to create a new `client` for the target LLM using API key.
+  4. Run the cells; results append to `data.db` by default.
 
 ## Database: data.db
 
